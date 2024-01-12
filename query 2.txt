@@ -29,8 +29,40 @@ INNER JOIN degrees
 ON students.degree_id = degrees.id
 WHERE degrees.name = "Corso di Laurea in Biologia"
 
+2. SELECT 
+FROM departments
+INNER JOIN degrees
+ON department.id = degrees.dipartment_id
+WHERE department.name = "Dipartimento di Neuroscienze"
 
+3.SELECT
+FROM courses
+JOIN course_teacher
+ON courses.id = course_teacher.course_id 
+JOIN teachers 
+ON teachers.id= course_teacher.teacher_id 
+WHERE teachers.name = Fulvio 
+AND teachers.surname = "Amato"
 
+4. SELECT students.name, students.surname, degrees.name, departments.name
+FROM students 
+JOIN degrees
+ON students.degrees_id = degrees.id
+JOIN departments
+ON degrees.department_id = departments.id
+ORDER BY name,surname
+
+5. SELECT
+FROM
+INNER JOIN
+ON
+WHERE
+
+6. SELECT
+FROM
+INNER JOIN
+ON
+WHERE
 
 COUNT
 
